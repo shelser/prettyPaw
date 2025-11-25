@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.png" type="image/png"> -->
+
+  <title>Зоосад Pretty Paw</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <img src="./img/logo.svg" alt="Оранжевый логотип PrettyPaw" class="header__logo">
+
+      <nav class="header__nav navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list">
+            <a href="/index.html" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__list">
+            <a href="#about" class="navigation__link">О&nbsp;зоосаде</a>
+          </li>
+          <li class="navigation__list">
+            <a href="#history" class="navigation__link">История</a>
+          </li>
+          <li class="navigation__list">
+            <a href="#deeds" class="navigation__link">Добрые&nbsp;дела</a>
+          </li>
+          <li class="navigation__list">
+            <a href="career" class="navigation__link">Карьера</a>
+          </li>
+        </ul>
+
+        <button class="navigation__button" aria-label="Открыть меню"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Зоосад</h1>
+
+        <p class="hero__subtitle">С&nbsp;заботой о&nbsp;животных</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__title">О компании</h2>
+
+        <div class="about__content">
+          <p class="about__description">
+            Наш зоосад расположен в&nbsp;живописном месте и&nbsp;занимает большую территорию. Здесь содержатся различные виды животных со&nbsp;всего мира, начиная от&nbsp;крупных хищников, таких как львы и&nbsp;тигры, до&nbsp;разнообразных птиц, рыб и&nbsp;насекомых.
+          </p>
+
+          <a href="#about" class="about__link">Подробнее</a>
+
+          <ul class="about__count-list">
+            <li class="about__count-item">
+              <p class="about__count-list">500+</p>
+              <p class="about__count-desc">Животных</p>
+            </li>
+            <li class="about__count-item">
+              <p class="about__count-list">200+</p>
+              <p class="about__count-desc">Сотрудников</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- slider about on -->
+        <div class="about__picture">
+          <div class="about__slider swiper">
+            <ul class="about__image-list swiper-wrapper">
+
+              <li class="about__image-item swiper-slide">
+                <picture class="about__image-wrapper">
+                  <source srcset="./img/leo_desktop.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="./img/leo_desktop.jpg" media="(min-width: 1280px)">
+                  <source srcset="./img/leo_laptop.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="./img/leo_laptop.jpg" media="(min-width: 1024px)">
+                  <source srcset="./img/leo_tablet.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./img/leo_tablet.jpg" media="(min-width: 768px)">
+                  <source srcset="./img/leo.webp" type="image/webp">
+                  <img src="./img/leo.jpg" alt="Пара львов" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="about__image-item swiper-slide">
+                <picture class="about__image-wrapper">
+                  <source srcset="./img/parrots_desktop.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="./img/parrots_desktop.jpg" media="(min-width: 1280px)">
+                  <source srcset="./img/parrots_laptop.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="./img/parrots_laptop.jpg" media="(min-width: 1024px)">
+                  <source srcset="./img/parrots_tablet.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./img/parrots_tablet.jpg" media="(min-width: 768px)">
+                  <source srcset="./img/parrots.webp" type="image/webp">
+                  <img src="./img/parrots.jpg" alt="Пара попугаев" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="about__image-item swiper-slide">
+                <picture class="about__image-wrapper">
+                  <source srcset="./img/fulgens_desktop.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="./img/fulgens_desktop.jpg" media="(min-width: 1280px)">
+                  <source srcset="./img/fulgens_laptop.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="./img/fulgens_laptop.jpg" media="(min-width: 1024px)">
+                  <source srcset="./img/fulgens_tablet.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./img/fulgens_tablet.jpg" media="(min-width: 768px)">
+                  <source srcset="./img/fulgens.webp" type="image/webp">
+                  <img src="./img/fulgens.jpg" alt="Панда" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="about__image-item swiper-slide">
+                <picture class="about__image-wrapper">
+                  <source srcset="./img/giraffe_desktop.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="./img/giraffe_desktop.jpg" media="(min-width: 1280px)">
+                  <source srcset="./img/giraffe_laptop.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="./img/giraffe_laptop.jpg" media="(min-width: 1024px)">
+                  <source srcset="./img/giraffe_tablet.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./img/giraffe_tablet.jpg" media="(min-width: 768px)">
+                  <source srcset="./img/giraffe.webp" type="image/webp">
+                  <img src="./img/giraffe.jpg" alt="Жираф" loading="lazy">
+                </picture>
+              </li>
+
+            </ul>
+            <div class="about__slider-pagination swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- slider about off -->
+
+      </div>
+    </section>
+
+    <section class="location">
+      <h2 class="visually-hidden">Локация зоопарка</h2>
+
+      <ul class="location__list">
+        <li class="location__item">
+          <h3 class="location__title">Млекопитающие</h3>
+          <p class="location__description">В&nbsp;эту группу входят животные, которые питаются молоком в&nbsp;раннем возрасте и&nbsp;обладают механизмом регуляции телевой температуры. В&nbsp;нашем зоосаде можно увидеть млекопитающих, таких как львы, тигры, слоны и&nbsp;обезьяны.</p>
+        </li>
+        <li class="location__item">
+          <h3 class="location__title">Птицы</h3>
+          <p class="location__description">Эта группа включает в&nbsp;себя разнообразных пернатых обитателей зоопарка, от&nbsp;маленьких певчих птиц до&nbsp;больших драпированных птиц хищников. В&nbsp;нашем зоосаде можно увидеть таких птиц, как фламинго, аисты, орлы и&nbsp;павлины.</p>
+        </li>
+        <li class="location__item">
+          <h3 class="location__title">Рептилии</h3>
+          <p class="location__description">В&nbsp;эту группу входят животные, которые имеют чешуйчатую кожу и&nbsp;обладают приспособлениями для жизни на&nbsp;суше или в&nbsp;воде. В&nbsp;нашем зоосаде можно увидеть таких рептилий, как крокодилы, змеи, черепахи и&nbsp;ящерицы.</p>
+        </li>
+        <li class="location__item">
+          <h3 class="location__title">Водный мир</h3>
+          <p class="location__description">В&nbsp;эту группу входят животные, которые живут в&nbsp;воде или зависят от&nbsp;воды для выживания. В&nbsp;нашем зоосаде можно увидеть разнообразных рыб, дельфинов, китов, акул и&nbsp;других водных животных.</p>
+        </li>
+        <li class="location__item">
+          <h3 class="location__title">Насекомые</h3>
+          <p class="location__description">В&nbsp;эту группу входят разнообразные насекомые, такие как бабочки, жуки, муравьи и&nbsp;пчелы. В&nbsp;нашем зоосаде можно увидеть различных беспозвоночных и&nbsp;насекомых.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="career">
+      <div class="container career__container">
+        <h2 class="career__title">Карьера у нас</h2>
+
+        <div class="career__content">
+          <p class="career__description">
+            Карьера в&nbsp;компании &laquo;Зоосад&raquo; может предоставить много интересных и&nbsp;перспективных возможностей для людей, увлеченных животными и&nbsp;желающих развиваться в&nbsp;этой области.
+          </p>
+          <a href="#career" class="career__link">Подробнее</a>
+        </div>
+
+        <!-- slider career on -->
+        <div class="career__picture">
+          <div class="career__slider swiper">
+            
+            <ul class="career__image-list swiper-wrapper">
+              
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/parrots2.webp" type="image/webp">
+                  <img src="./img/parrots2.jpg" alt="Попугаи" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/giraffe2.webp" type="image/webp">
+                  <img src="./img/giraffe2.jpg" alt="Жираф" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/giraffes.webp" type="image/webp">
+                  <img src="./img/giraffes.jpg" alt="Жирафы" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/leo2.webp" type="image/webp">
+                  <img src="./img/leo2.jpg" alt="Пара львов" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/meerkat.webp" type="image/webp">
+                  <img src="./img/meerkat.jpg" alt="Сурикаты" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/flamingos.webp" type="image/webp">
+                  <img src="./img/flamingos.jpg" alt="Стая фламинго" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/zebra.webp" type="image/webp">
+                  <img src="./img/zebra.jpg" alt="Зебра" loading="lazy">
+                </picture>
+              </li>
+
+              <li class="career__image-item swiper-slide">
+                <picture class="career__image-wrapper">
+                  <source srcset="./img/elephant.webp" type="image/webp">
+                  <img src="./img/elephant.jpg" alt="Слон" loading="lazy">
+                </picture>
+              </li>
+
+            </ul>
+            
+            <div class="career__slider-pagination swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- slider career of -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer__container">
+      <img class="footer__logo" src="./img/logo-black.svg" alt="Логотоп черного цвета pretty paw">
+      <ul class="footer__social-list">
+
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.1629 0C25.1807 3.77386e-05 25.1999 8.1767e-05 25.2204 0.000133133L25.4417 0.000821863C28.0098 0.0102565 41.0257 0.104603 44.5351 1.04807C46.6864 1.62508 48.3805 3.32557 48.9554 5.48411C49.272 6.67004 49.4926 8.24628 49.6464 9.86739L49.6762 10.1921C49.7004 10.463 49.7228 10.7346 49.7435 11.0051L49.7675 11.3292C49.9729 14.1858 49.9969 16.8589 49.9997 17.4437L50 17.5226C50 17.5291 50 17.5397 50 17.5397V17.5839C50 17.5839 50 17.5945 50 17.601L49.9997 17.6799C49.9968 18.2868 49.9711 21.1427 49.7435 24.1187L49.7178 24.4437L49.6905 24.7691C49.5358 26.5584 49.3036 28.3351 48.9554 29.6395C48.3805 31.798 46.6864 33.4989 44.5351 34.0755C40.9088 35.0508 27.1315 35.1191 25.2204 35.1239L25.0732 35.1242C25.0612 35.1242 25.0506 35.1242 25.0414 35.1242L24.9814 35.1242C24.9814 35.1242 24.9676 35.1242 24.9585 35.1242L24.7795 35.1239C23.8137 35.1215 19.8173 35.1028 15.6321 34.9591L15.097 34.9401C15.0077 34.9368 14.9184 34.9334 14.8291 34.93L14.2934 34.9089L13.7589 34.8862C10.2917 34.734 6.98594 34.4845 5.46521 34.0755C3.31389 33.4989 1.61984 31.798 1.04486 29.6395C0.69653 28.3351 0.464309 26.5584 0.309494 24.7691L0.28219 24.4437L0.256541 24.1187C0.0371247 21.251 0.00527399 18.4947 0.000650499 17.7549L9.80056e-05 17.649C5.92341e-05 17.6395 2.69246e-05 17.6307 0 17.6227V17.5009C2.69246e-05 17.4929 5.92341e-05 17.4841 9.80056e-05 17.4746L0.000650499 17.3687C0.00483781 16.6988 0.0313575 14.3749 0.199315 11.8121L0.221055 11.4907C0.224804 11.4369 0.228617 11.3831 0.232494 11.3292L0.256541 11.0051C0.277241 10.7346 0.29961 10.463 0.323783 10.1921L0.353665 9.86739C0.50749 8.24628 0.728197 6.67004 1.04486 5.48411C1.61984 3.32557 3.31389 1.62508 5.46521 1.04807C6.98594 0.639233 10.2917 0.389844 13.7589 0.237716L14.2934 0.215071L14.8291 0.19391C14.9184 0.190504 15.0077 0.187158 15.097 0.183871L15.6321 0.164842C19.5502 0.0303418 23.3028 0.00543436 24.5583 0.000821863L24.7795 0.000133133C24.8 8.1767e-05 24.8192 3.77386e-05 24.837 0H25.1629ZM20.0001 10.035V25.0886L32.9899 17.5622L20.0001 10.035Z" fill="black"/>
+              </svg>
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25ZM25.896 18.4562C23.4644 19.4676 18.6046 21.5609 11.3166 24.7362C10.1331 25.2068 9.51316 25.6672 9.45673 26.1174C9.36135 26.8782 10.3141 27.1778 11.6115 27.5858C11.788 27.6413 11.9709 27.6988 12.1583 27.7597C13.4348 28.1746 15.1518 28.66 16.0445 28.6793C16.8542 28.6968 17.7579 28.363 18.7556 27.6779C25.565 23.0814 29.0801 20.758 29.3008 20.708C29.4565 20.6726 29.6722 20.6282 29.8184 20.7581C29.9646 20.8881 29.9502 21.1341 29.9347 21.2001C29.8403 21.6025 26.1004 25.0795 24.165 26.8788C23.5616 27.4397 23.1336 27.8376 23.0461 27.9285C22.8501 28.1321 22.6504 28.3246 22.4584 28.5097C21.2726 29.6529 20.3833 30.5101 22.5077 31.9101C23.5285 32.5828 24.3455 33.1391 25.1604 33.6941C26.0505 34.3002 26.9382 34.9048 28.0868 35.6577C28.3794 35.8495 28.6589 36.0488 28.9311 36.2428C29.9669 36.9813 30.8975 37.6447 32.0472 37.5389C32.7152 37.4774 33.4053 36.8493 33.7557 34.9758C34.5839 30.5483 36.2118 20.9552 36.5881 17.0021C36.621 16.6558 36.5796 16.2126 36.5463 16.018C36.513 15.8234 36.4434 15.5462 36.1905 15.341C35.8909 15.0979 35.4285 15.0467 35.2217 15.0503C34.2814 15.0669 32.8388 15.5685 25.896 18.4562Z" fill="black"/>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer__developers">
+        <li class="footer__developer">Designer: <a href="#">Anastasia Ilina</a></li>
+        <li class="footer__developer">Developer: <a href="#">shelser</a></li>
+      </ul>
+
+      <p class="footer__copyright">&copy; PrettyPaw, 2023</p>
+    </div>
+  </footer>
+</body>
+</html>
