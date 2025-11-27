@@ -1,0 +1,49 @@
+@use 'var' as *;
+
+.footer {
+
+        
+
+		&__container {
+            display: flex;
+            flex-direction: column;
+
+            @include md {
+                flex-direction: row;
+            //     justify-content: space-between;
+                flex-wrap: wrap;
+            }
+		}
+
+		&__logo {
+            max-width: 200px;
+            margin-top: 60px;
+            flex-basis: 50%;
+            flex-grow: 0;
+		}
+
+		&__social-list {
+            display: flex;
+            margin-top: 32px;
+            gap: 16px;
+            align-items: center;
+		}
+
+		&__social-item {
+            width: 36px;
+		}
+
+		&__social-link {
+		}
+
+		&__developers {
+            margin-top: 52px;
+		}
+
+		&__developer {
+		}
+
+		&__copyright {
+            margin-top: 52px;
+		}
+}
