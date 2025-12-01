@@ -1,49 +1,85 @@
-@use 'var' as *;
+@use "var" as *;
 
 .footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
 
-        
+    @include md {
+      display: grid;
+      grid-template-columns: 80% 1fr;
+      grid-template-rows: min-content min-content;
+      grid-template-areas: 
+      'logo social-list'
+      'copyright developers'
+      ;
+      gap: 40px 0;
+    }
+    @include lg {
+      grid-template-columns: 75% 1fr;
+      gap: 72px 0;
+    }
+    @include xl {
+      grid-template-columns: 80% 1fr;
+    }
+  }
 
-		&__container {
-            display: flex;
-            flex-direction: column;
+  &__logo {
+    max-width: 200px;
+    margin-top: 60px;
+    flex-basis: 80%;
+    @include md {
+      grid-area: logo;
+    }
+    @include lg {
+      max-width: 360px;
+    }
+  } 
 
-            @include md {
-                flex-direction: row;
-            //     justify-content: space-between;
-                flex-wrap: wrap;
-            }
-		}
+  &__social-list {
+    display: flex;
+    margin-top: 32px;
+    gap: 16px;
+    align-items: center;
+    @include md {
+      grid-area: social-list;
+      align-self: end;
+    }
+  }
 
-		&__logo {
-            max-width: 200px;
-            margin-top: 60px;
-            flex-basis: 50%;
-            flex-grow: 0;
-		}
+  &__social-item {
+    width: 36px;
+    @include lg {
+      width: 50px;
+    }
+  }
 
-		&__social-list {
-            display: flex;
-            margin-top: 32px;
-            gap: 16px;
-            align-items: center;
-		}
+  &__social-link {
+  }
 
-		&__social-item {
-            width: 36px;
-		}
+  &__developers {
+    margin-top: 52px;
+    @include md {
+      grid-area: developers;
+      margin: 0;
+      padding-bottom: 30px;
+      }
+  }
 
-		&__social-link {
-		}
+  &__developer {
+      @include lg {
+      font-size: 20px;
+    }
+  }
 
-		&__developers {
-            margin-top: 52px;
-		}
-
-		&__developer {
-		}
-
-		&__copyright {
-            margin-top: 52px;
-		}
+  &__copyright {
+    margin-top: 52px;
+    @include md {
+      margin: 0;
+      grid-area: copyright;
+    }
+    @include lg {
+      font-size: 20px;
+    }
+  }
 }

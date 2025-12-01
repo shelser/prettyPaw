@@ -1,0 +1,83 @@
+@use 'var' as *;
+
+.career {
+  padding-top: 80px;
+
+		&__container {
+      
+		}
+
+		&__content {
+      @include md {
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        grid-template-rows: min-content min-content;
+        gap: 24px 21px;
+        grid-template-areas: 
+          'title link'
+          'description .';
+      }
+      @include md {
+        margin-bottom: 40px;
+      }
+      @include lg {
+        gap: 40px 31px;
+        margin-bottom: 50px;
+      }
+      @include xl {
+        gap: 40px 0;
+      }
+		}
+
+		&__title {
+      font-weight: 1000;
+      font-size: 32px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $second;
+      margin-bottom: 24px;
+
+      @include md {
+        margin-bottom: 0;
+        grid-area: title;
+      }
+      @include lg {
+        font-size: 52px;
+      }
+		}
+
+		&__description {
+      margin-bottom: 24px;
+
+      @include md {
+        margin-bottom: 0;
+        grid-area: description;
+      }
+      @include lg {
+        font-size: 20px;
+      }
+		}
+
+		&__link {
+      margin-bottom: 40px;
+
+      @include md {
+        margin-bottom: 0;
+        grid-area: link;
+        justify-self: end;
+      }
+      @include lg {
+        font-size: 20px;
+        justify-self: end;
+      }
+		}
+
+    &__image {
+      border-radius: 16px;
+      @include md {
+        min-width: 244px;
+        min-height: 244px;
+      }
+    }
+}
+
