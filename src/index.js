@@ -5,6 +5,11 @@ import 'swiper/css/pagination';
 
 import './index.scss';
 import { slidersInit } from './modules/slider';
+import { videoBackgroundInit } from './modules/videoBackground';
+import { menuControl } from './modules/menuControl';
+
+videoBackgroundInit();
+menuControl();
 
 slidersInit('.about__slider', {
     pagination: {
@@ -15,6 +20,8 @@ slidersInit('.about__slider', {
 slidersInit('.career__slider', {
     breakpoints: {
         320: {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
             pagination: true
          },
         768: {
@@ -30,7 +37,7 @@ slidersInit('.career__slider', {
         1240: {
             slidesPerView: 'auto',
             spaceBetween: 30,
-            pagination: false
+            pagination: false,
         },
     },   
     pagination: {
