@@ -1,83 +1,84 @@
 @use "var" as *;
 
 .footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
   &__container {
-    display: flex;
-    flex-direction: column;
 
-    @include md {
+    @include sm {
       display: grid;
-      grid-template-columns: 80% 1fr;
-      grid-template-rows: min-content min-content;
-      grid-template-areas: 
-      'logo social-list'
-      'copyright developers'
-      ;
-      gap: 40px 0;
+      grid-template-columns: 1fr max-content;
+      gap: 40px;
     }
     @include lg {
-      grid-template-columns: 75% 1fr;
-      gap: 72px 0;
+      gap: 72px;
     }
     @include xl {
-      grid-template-columns: 80% 1fr;
+      // grid-template-columns: 80% 1fr;
     }
   }
 
   &__logo {
     max-width: 200px;
-    margin-top: 60px;
-    flex-basis: 80%;
-    @include md {
-      grid-area: logo;
+    margin-bottom: 32px;
+    @include sm {
+      margin-bottom: 0;
     }
     @include lg {
-      max-width: 360px;
+      width: 360px;
     }
   } 
 
   &__social-list {
     display: flex;
-    margin-top: 32px;
+    margin-bottom: 52px;
     gap: 16px;
-    align-items: center;
-    @include md {
-      grid-area: social-list;
-      align-self: end;
+
+    @include sm {
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      gap: 36px;
     }
   }
 
   &__social-item {
+
+  }
+
+  &__social-link {
+    display: block;
     width: 36px;
+
     @include lg {
       width: 50px;
     }
   }
 
-  &__social-link {
-  }
-
   &__developers {
-    margin-top: 52px;
-    @include md {
-      grid-area: developers;
-      margin: 0;
-      padding-bottom: 30px;
+    margin-bottom: 52px;
+    line-height: 1;
+
+    @include sm {
+      order: 2;
+      margin-bottom: 0;
       }
   }
 
   &__developer {
+    margin-bottom: 19px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
       @include lg {
       font-size: 20px;
     }
   }
 
   &__copyright {
-    margin-top: 52px;
-    @include md {
-      margin: 0;
-      grid-area: copyright;
-    }
     @include lg {
       font-size: 20px;
     }

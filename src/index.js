@@ -14,29 +14,23 @@ slidersInit('.about__slider', {
 
 slidersInit('.career__slider', {
     breakpoints: {
-    // when window width is >= 320px
         320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            pagination: {
-                enabled: true  // включено на мобильных
-            }
-        },
-    // when window width is >= 480px
+            pagination: true
+         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 'auto',
             spaceBetween: 20,
-            pagination: {
-                enabled: false  // включено на мобильных
-            }
+            pagination: false,
         },
-    // when window width is >= 640px
+        1024: {
+            slidesPerView: 'auto',
+            spaceBetween: 26,
+            pagination: false,
+        },
         1240: {
-            slidesPerView: 4,
+            slidesPerView: 'auto',
             spaceBetween: 30,
-            pagination: {
-                enabled: false  // включено на мобильных
-            }
+            pagination: false
         },
     },   
     pagination: {
